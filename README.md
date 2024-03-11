@@ -1,0 +1,1 @@
+Repositório usado para estudos.
