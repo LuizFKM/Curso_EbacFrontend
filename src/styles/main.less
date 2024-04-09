@@ -1,0 +1,91 @@
+@fonteTitulo: "Exo 2", sans-serif;
+@fontePrincipal: Libre Franklin, sans-serif;
+@corDoTitulo:#f6b93b;
+@corDoTexto: #1e3799;
+@corPrincipal:#079992;
+@corButtonHover: #0c2461;
+body {
+    background-color: @corPrincipal;
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
+    font-weight: 600;
+    
+}
+
+h1{
+    font-weight: 600;
+    font-family: @fonteTitulo;
+    color: @corDoTitulo;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid @corDoTitulo;
+    text-align: center;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    input{
+        width: 100%;
+        color: #fff;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid @corDoTexto;
+    }
+
+    button {
+        width: 60%;
+        padding: 10px;
+        font-size: 1em;
+        font-family: @fontePrincipal;
+        color: #f6b93b;
+        font-weight: bold;
+        background-color: @corDoTexto;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all ease .5s;
+        &:hover {
+            background-color: @corButtonHover;
+            transform: scale(1.1);
+        }
+
+    }
+}
+
+.resposta { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        color: @corDoTitulo;
+        font-size: 25px;
+    }
+
+}
+
+
+
