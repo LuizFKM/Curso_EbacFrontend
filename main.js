@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //     console.error('Erro de rede');
     // };
 
-    fetch('https://api.github.com/users/LuizFKM')
+    fetch('https://api.github.com/users/LuizFKM/oi')
         .then(function(res){
             return res.json()
         })
@@ -46,6 +46,9 @@ document.addEventListener("DOMContentLoaded", function(){
             followersElement.innerText = json.followers;
             reposElement.innerText = json.public_repos;
             linkElement.href = json.html_url;
+        })
+        .catch(function(erro){
+            alert('Não foi possível encontrar o usuário')
         })
 
 
