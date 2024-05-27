@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //     console.error('Erro de rede');
     // };
 
-    fetch('https://api.github.com/users/LuizFKM/oi')
+    fetch('https://api.github.com/users/LuizFKM')
         .then(function(res){
             return res.json()
         })
